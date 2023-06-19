@@ -1,0 +1,90 @@
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.table-container img {
+  width: 650px;
+}
+.table-sec .large-text {
+  margin-bottom: 3rem;
+}
+.toggle-sec .box {
+  margin-bottom: 2rem;
+}
+.toggle-sec .toggle-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.toggle-sec button {
+  padding: 2rem 1.2rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.toggle-sec .text {
+  padding: 2rem;
+  width: 42rem;
+}
+.toggle-sec p {
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.toggle-sec .toggle-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+  border: 2px solid purple;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+}
+.toggle-sec .accordion {
+  transition: 0.5s;
+  background: #181818;
+  border: 1px solid #222;
+  border-radius: 1rem;
+  width: 40rem;
+  align-items: center;
+}
+.toggle-sec .accordion:hover {
+  background-color: #181818;
+}
+.span {
+  color: #fff;
+  font-size: 2rem;
+}
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .toggle-sec .accordion {
+    width: 50rem;
+  }
+  .table-container img {
+    width: 550px;
+  }
+  .toggle-sec p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 440px) {
+  .toggle-sec .accordion {
+    width: 38rem;
+  }
+  .table-container img {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.tool-sec .text-container {
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  margin: auto;
+}
+.text-container p {
+  max-width: 500px;
+  font-size: 2rem;
+  line-height: 2.95rem;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  .title-heading {
+    font-size: 4rem;
+  }
+  .tool-sec .text-container {
+    margin: 3rem auto 0 auto;
+  }
+  .text-container p {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+  .toggle-sec .accordion {
+    width: 80rem;
+  }
+}

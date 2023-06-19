@@ -1,0 +1,79 @@
+.box-sec {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.box-sec .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.box-sec .box-container .card {
+  max-width: 400px;
+  padding: 2.75rem 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.box-sec .box-container .card-body {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.box-sec .box-container .card-body p {
+  font-size: 1.7rem;
+  line-height: 1.75;
+  align-items: start;
+}
+.box-sec .box-container .card-body a {
+  text-decoration: underline;
+}
+.box-sec .box-container .card-body a:hover {
+  color: #31cdab;
+}
+
+/* ----- media query ------ */
+@media screen and (max-width: 768px) {
+  .box-sec {
+    padding-top: 10rem;
+  }
+  .box-sec .box-container {
+    margin-top: 15rem;
+  }
+  .card-body .h4 {
+    font-size: 2.8rem;
+  }
+  .box-sec .box-container .card-body p {
+    font-size: 2.2rem;
+    line-height: 1.75;
+  }
+  .box-sec .box-container .card-body p > a {
+    font-size: 2.2rem;
+  }
+}
+/* ----- Media Query ----- */
+@media only screen and (min-width: 300px) and (max-width: 440px) {
+  .box-container {
+    margin-top: 0rem;
+  }
+  .box-sec {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .box-container .items .item .text p {
+    font-size: 2rem;
+  }
+  .card-body .h4 {
+    font-size: 2.2rem;
+  }
+  .box-sec .box-container .card {
+    max-width: 600px;
+    padding: 1.5rem 0.2rem;
+    border-radius: 1rem;
+    width: 100%;
+  }
+  .box-sec .box-container .card-body p {
+    font-size: 2.1rem;
+  }
+}

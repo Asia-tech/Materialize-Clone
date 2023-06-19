@@ -1,0 +1,74 @@
+:root {
+  --bg: #111;
+  --bg-nav: hsla(0, 0%, 7%, 0.851);
+  --card: #161616;
+  --card-light: #181818;
+  --divider: #222;
+  --divider-light: #343434;
+  --logo: var(--white);
+  --important: #eee;
+  --sub: #bbb;
+  --body: #999;
+  --light: #555;
+  --default: 0 0.625rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+  --button-ghost: 0 0.625rem 1rem 0 rgba(255, 0, 143, 0.212);
+  --button-hover: hsla(2, 86%, 74%, 0.14) 0px 0px 0px 8px;
+  --text-gradient: linear-gradient(
+    to right bottom,
+    #fff 25%,
+    hsla(0, 0%, 100%, 0.5)
+  );
+  --primary-gradient: linear-gradient(
+    270deg,
+    #944bdd,
+    #b349d0 11%,
+    #c846c1 22%,
+    #d94ab5 33%,
+    #e44ea6 44%,
+    #ee599c 56%,
+    #f36293 67%,
+    #f66f8a 78%,
+    #f77e88 89%,
+    #f68984
+  );
+}
+.hero {
+  /* height: 90vh; */
+  text-align: center;
+}
+.hero .container {
+  margin-top: 2.5rem;
+  margin-bottom: 11rem;
+}
+
+.hero p {
+  max-width: 550px;
+  font-size: 2rem;
+  line-height: 2.1;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.hero .btn-div {
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* ---- media query ---- */
+@media screen and (max-width: 768px) {
+  .hero {
+    /* height: 80vh; */
+    margin: 5rem 0 3rem 0;
+  }
+  .hero p {
+    max-width: 650px;
+    font-size: 2.2rem;
+    margin: 4rem 1rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .hero {
+    /* height: 100vh; */
+    margin: 2rem 0 3rem 0;
+  }
+}

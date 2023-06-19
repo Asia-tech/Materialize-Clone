@@ -1,0 +1,27 @@
+:root {
+  --primary-gradient: linear-gradient(
+    270deg,
+    #944bdd,
+    #b349d0 11%,
+    #c846c1 22%,
+    #d94ab5 33%,
+    #e44ea6 44%,
+    #ee599c 56%,
+    #f36293 67%,
+    #f66f8a 78%,
+    #f77e88 89%,
+    #f68984
+  );
+}
+
+#heading .subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #cb3f9f;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}

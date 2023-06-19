@@ -1,0 +1,37 @@
+.markdown-text,
+h2 {
+  text-align: center;
+}
+.markdown-text a:hover,
+h2 {
+  color: #fff;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 5rem;
+}
+.team-images img {
+  max-height: 5rem;
+}
+.team-images {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 9rem;
+  column-gap: 10rem;
+  opacity: 0.6;
+}
+.markdown-text {
+  margin-top: 5rem;
+}
+.markdown-text a,
+.markdown-text p {
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+.markdown-text a {
+  text-decoration: underline;
+}

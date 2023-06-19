@@ -1,0 +1,19 @@
+.btn-sec {
+  margin-top: 1rem;
+}
+.btn-sec .btn {
+  font-size: 1.7rem;
+  padding: 2rem 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .hero-btn .btn-sec {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-btnsec {
+    width: 80%;
+  }
+}

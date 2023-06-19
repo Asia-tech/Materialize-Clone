@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --bg: #111;
+  --bg-nav: #121212d9;
+  --card: #161616;
+  --card-light: #181818;
+  --divider: #222;
+  --divider-light: #343434;
+  --logo: var(--white);
+  --important: #eee;
+  --sub: #bbb;
+  --body: #999;
+  --light: #555;
+  --default: 0 0.625rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+  --button-hover: hsla(2, 86%, 74%, 0.14) 0px 0px 0px 8px;
+  --primary-gradient: linear-gradient(
+    270deg,
+    #944bdd,
+    #b349d0 11%,
+    #c846c1 22%,
+    #d94ab5 33%,
+    #e44ea6 44%,
+    #ee599c 56%,
+    #f36293 67%,
+    #f66f8a 78%,
+    #f77e88 89%,
+    #f68984
+  );
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
+  color: var(--body);
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+.flex {
+  display: flex;
+}
+.wrapper {
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.margin-top {
+  margin-top: 10rem;
+}
+.margin-bottom {
+  margin-bottom: 10rem;
+}
+a {
+  text-decoration: none;
+  word-wrap: break-word;
+}
+a,
+p {
+  font-size: 1.6rem;
+  color: var(--sub);
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+img,
+video {
+  height: auto;
+}
+.section {
+  padding: 4rem 2rem;
+  /* height: 100vh; */
+}
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icon {
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  vertical-align: middle;
+}
+a,
+button,
+path,
+svg {
+  transition: 50ms 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-gradient {
+  background-clip: text;
+  background-image: var(--primary-gradient);
+  color: transparent !important;
+}
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.h1 {
+  font-size: 6rem;
+  line-height: 1.2 !important;
+}
+@media screen and (max-width: 944px) {
+  .h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .title-heading {
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+  }
+  .large-text {
+    font-size: 2rem;
+    margin: 4rem;
+    word-spacing: 0.2rem;
+  }
+  .hover-link {
+    font-size: 2rem !important;
+  }
+}
+.h4 {
+  font-size: 2.2rem;
+  line-height: 2;
+}
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--important);
+}
+.mtop {
+  margin-top: 4rem;
+}
+.title-heading {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+.large-text {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: #dcdcdc;
+}
+.btn,
+.hover-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 0.5rem;
+  letter-spacing: 0.2rem;
+  padding: 1.4rem 1.5rem;
+}
+.hover-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  position: relative;
+  transition: 0.5s ease;
+}
+.hover-link:before {
+  background: var(--primary-gradient);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+.hover-link:hover {
+  color: var(--important) !important;
+}
+.primary-btn {
+  background: var(--primary-gradient);
+  color: var(--important);
+  font-weight: 700;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  box-shadow: 0.625rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+.box-card {
+  max-width: 400px;
+  padding: 2.75rem 1.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .card {
+    padding: 7rem 5rem;
+  }
+}
+.hljs {
+  background: #282c34;
+  color: #abb2bf;
+}
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color: #c678dd;
+}
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color: #e6c07b;
+}
+.button-wrapper {
+  position: relative;
+  margin-left: 2rem;
+}
+.ctn-btn {
+  display: block;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+}
+.button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: var(--primary-gradient);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  z-index: -1;
+  transform: translate(-2px, -2px);
+  transition: filter 1s ease-in;
+}
+.button-wrapper:hover .button-bg {
+  filter: blur(6px);
+  transition: filter 1s ease-in;
+}
+.avator {
+  margin-right: 1rem;
+  background-image: var(--primary-gradient);
+  border-radius: 50%;
+  padding: 2px;
+}
+.text-sm {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+.btn-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testi-btn {
+  padding: 0.8rem 1.2rem !important;
+  letter-spacing: 0.2rem;
+}
+.testi-btn > span {
+  font-size: 1.2rem;
+}
+.text-medium {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+.grid {
+  display: grid;
+}
+.col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+@media screen and (max-width: 520px) {
+  .button-wrapper {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .btn-sec {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .section {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 440px) {
+  html {
+    font-size: 45%;
+  }
+  .h1 {
+    font-size: 4rem;
+  }
+  .title-heading {
+    font-size: 3.5rem;
+  }
+}

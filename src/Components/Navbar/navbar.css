@@ -1,0 +1,119 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #121212d9;
+  border-bottom: 1px solid #343434;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.5rem 3rem;
+}
+.header .logo {
+  cursor: pointer;
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+}
+.header .logo img {
+  width: 150px;
+}
+.header .navLists {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header .n-list > li,
+.header .btn-link > li {
+  gap: 2rem;
+  margin-right: 4rem;
+}
+.header .n-list :nth-child(5) {
+  margin-right: 20rem;
+}
+.header .navLists .navItem .icon {
+  position: absolute;
+}
+.header .btn-link {
+  align-items: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1050px) {
+  .header .n-list > li,
+  .header .btn-link > li {
+    gap: 1rem;
+    margin-right: 3rem;
+  }
+  .header .n-list :nth-child(5) {
+    margin-right: 15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header .navBar {
+    /* padding: 1rem 4rem 3rem 4rem; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -500rem;
+    transition: 0.5s ease-in-out;
+    background: #000;
+  }
+  .header .navLists {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 4rem 3rem 4rem;
+    background: #000;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header .navBar .n-list {
+    flex-direction: column;
+  }
+
+  .header .navBar .navLists .navItem {
+    padding: 1.5rem 0;
+  }
+
+  .header .navBar .navLists .btn-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .navBar .closeNavbar {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 6rem;
+  }
+  .header .activeNavbar {
+    top: 5rem;
+  }
+  .header .btn-link .btn {
+    margin-top: 1rem;
+  }
+  .header .toggleNavbar .icon {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+}
