@@ -5,7 +5,7 @@ import Btn2 from "./../../common/btn2/Btn2";
 const Hero = () => {
   return (
     <>
-      <section className="hero section  ">
+      <section className="hero section row ">
         <div className="container">
           <h1 className="h1">
             The Cloud Database for

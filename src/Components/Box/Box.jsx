@@ -3,7 +3,7 @@ import "./box.css";
 
 const Box = () => {
   return (
-    <section className="box-sec margin-top margin-bottom">
+    <section className="row box-sec margin-top margin-bottom">
       <div>
         <div className="box-container">
           <div className="card">

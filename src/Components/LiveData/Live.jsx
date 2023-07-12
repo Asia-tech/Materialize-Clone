@@ -9,14 +9,14 @@ import img8 from "../../Assets/abstract-updates.webp";
 const Live = () => {
   return (
     <>
-      <section className="container live-sec">
+      <section className=" container live-sec">
         <Title
           className="span-heading"
           title="Empower your Team to "
           span="Build Confidently With Live Data."
         />
-        <div className="mtop">
-          <div className="live-container">
+        <div className="mtop row">
+          <div className="live-container ">
             {/*  ---- 1st box ---- */}
             <div className="live-box">
               <div className="img-div">

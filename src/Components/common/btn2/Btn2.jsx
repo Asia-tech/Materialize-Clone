@@ -16,22 +16,25 @@ const Btn2 = () => {
 
   return (
     <div className="btn-sec flex">
-      <a
-        href="https://materialize.com/demo/"
-        className="primary-btn btn hero-btnsec flex"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <span>GET a demo</span>
-        {isHovering ? (
-          <HiArrowRight className="icon btn-icon" />
-        ) : (
-          <AiOutlineRight className="icon btn-icon" />
-        )}
-      </a>
       <div className="button-wrapper hero-wrapper">
         <a
-          href="https://materialize.com/register/"
+          href="https://materialize.com/demo/"
+          className="primary-btn btn hero-btnsec flex"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <span>GET a demo</span>
+          {isHovering ? (
+            <HiArrowRight className="icon btn-icon" />
+          ) : (
+            <AiOutlineRight className="icon btn-icon" />
+          )}
+        </a>
+        <div className="button-bg"></div>
+      </div>
+      <div className="button-wrapper hero-wrapper">
+        <a
+          href="https://materialize.com/regiaster/"
           className="btn ctn-btn hero-btn"
         >
           <span>get started</span>

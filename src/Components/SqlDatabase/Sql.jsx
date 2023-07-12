@@ -6,7 +6,7 @@ import "./sql.css";
 const Sql = () => {
   return (
     <>
-      <section className="sql-sec margin-top margin-bottom container">
+      <section className="row sql-sec margin-top margin-bottom container">
         <h2 className="title-heading">
           Materialize combines the best of both worlds.
         </h2>

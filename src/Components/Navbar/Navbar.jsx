@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlineDown, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../../Assets/materialize-white-logo.png";
 import "./navbar.css";
 import TopNav from "./../topNav/TopNav";
 import Btn from "./../common/btn/Btn";
+import Dropdown from "./Dropdown";
+import AboutMenu from "./../AboutMenu/AboutMenu";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -30,13 +32,9 @@ const Navbar = () => {
 
   return (
     <section className="navBarSection">
-      <TopNav
-        text="❓ When to use Materialize vs a Stream Processor? Read the Guide."
-        smallText="Guide: Materialize or Stream Processor More ."
-        breakPoint={768}
-      />
+      <TopNav />
       <nav>
-        <header className={`header flex wrapper ${isSticky ? "sticky" : ""}`}>
+        <header className={`header header-row  ${isSticky ? "sticky" : ""}`}>
           <div className="logoDiv">
             <a href="/" className="logo flex">
               <img src={logo} alt="" />
@@ -51,14 +49,16 @@ const Navbar = () => {
                     Docs
                   </a>
                 </li>
-
-                <li className="navItem">
-                  <a href="/" className="navLink">
+                {/*
+                <li className="navItem nav-list-menu">
+                 <a href="/" className="navLink">
                     <span>Product</span>
                     <AiOutlineDown className="icon" />
                   </a>
+                  <Dropdown />
                 </li>
-
+               */}
+                <Dropdown />
                 <li className="navItem">
                   <a
                     href="https://materialize.com/pricing/"
@@ -73,13 +73,15 @@ const Navbar = () => {
                     <span>Blog</span>
                   </a>
                 </li>
-
-                <li className="navItem">
-                  <a href="/" className="navLink">
+                {/*
+                <li className="navItem ">
+                 <a href="/" className="navLink">
                     <span>About</span>
                     <AiOutlineDown className="icon" />
                   </a>
                 </li>
+              */}
+                <AboutMenu />
               </div>
               <div className="btn-link flex">
                 <li className="navItem">

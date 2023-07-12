@@ -3,8 +3,8 @@ import "./tool.css";
 
 const Tool = () => {
   return (
-    <section className="container section tool-sec">
-      <>
+    <>
+      <section className="row container section tool-sec ">
         <h2 className="title-heading">
           Traditional tools don't meet the requirements.
         </h2>
@@ -24,8 +24,9 @@ const Tool = () => {
             </p>
           </div>
         </div>
-      </>
-    </section>
+      </section>
+      <div className="margin-top"></div>
+    </>
   );
 };
 

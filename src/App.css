@@ -48,6 +48,12 @@ body {
 }
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .wrapper {
   padding-bottom: 1.25rem;
@@ -88,7 +94,6 @@ video {
 }
 .section {
   padding: 4rem 2rem;
-  /* height: 100vh; */
 }
 .container {
   padding-left: 1.5rem;
@@ -108,6 +113,7 @@ svg,
 video {
   vertical-align: middle;
 }
+
 a,
 button,
 path,
@@ -222,6 +228,7 @@ h6 {
   background: var(--primary-gradient);
   color: var(--important);
   font-weight: 700;
+  /* border: 2px solid #d94ab5; */
 }
 .card {
   background: var(--card);

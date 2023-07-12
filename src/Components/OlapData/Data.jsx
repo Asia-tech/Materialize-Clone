@@ -6,7 +6,7 @@ import { olapData } from "./../../dummydata";
 const Data = () => {
   return (
     <>
-      <section className="container olap-sec">
+      <section className=" section margin-top container olap-sec">
         <Title
           className="span-heading top-heading"
           subtitle="why materialize?"
@@ -14,7 +14,7 @@ const Data = () => {
           span="Correct, Up-To-Date Data."
           text="Fresh, correct and consistent data is a prerequisite to operationalizing OLAP data in your business."
         />
-        <div className="box-container">
+        <div className="box-container row">
           {olapData.map((val) => {
             return (
               <div className="items" key={val.id}>

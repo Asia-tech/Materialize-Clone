@@ -10,9 +10,9 @@ import user5 from "../../Assets/user5.webp";
 const Testimonial = () => {
   return (
     <>
-      <section className="testmonial-sec margin-top">
+      <section className="row testmonial-sec margin-top">
         <Title title="Trusted By " span="Data Teams" />
-        <div className="mtop testimonial-container">
+        <div className="mtop testimonial-container mx-auto">
           {/*----1st card----*/}
           <div className="card testimonial-card">
             <figure>

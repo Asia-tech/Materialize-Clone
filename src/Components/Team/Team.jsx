@@ -10,8 +10,8 @@ import img6 from "../../Assets/company/onward.png";
 const Team = () => {
   return (
     <>
-      <section className="team-sec section  mx-auto margin-top margin-bottom">
-        <div className="card">
+      <section className="team-sec row  container    mx-auto margin-bottom">
+        <div className="card mx-auto ">
           <div>
             <h2>Trusted by data and engineering teams</h2>
             <div className="team-images flex">
@@ -64,6 +64,7 @@ const Team = () => {
           </div>
         </div>
       </section>
+      <div className="margin-top"></div>
     </>
   );
 };

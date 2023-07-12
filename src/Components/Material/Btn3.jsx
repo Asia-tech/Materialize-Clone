@@ -7,19 +7,22 @@ const Btn3 = () => {
   const [isHovering, setIsHovering] = useState(false);
   return (
     <div className="btn-sec flex">
-      <a
-        href="https://materialize.com/register/"
-        className="primary-btn btn hero-btnsec flex"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
-        <span>Try Free</span>
-        {isHovering ? (
-          <HiArrowRight className="icon btn-icon" />
-        ) : (
-          <AiOutlineRight className="icon btn-icon" />
-        )}
-      </a>
+      <div className="button-wrapper hero-wrapper">
+        <a
+          href="https://materialize.com/register/"
+          className="primary-btn btn hero-btnsec flex"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          <span>Try Free</span>
+          {isHovering ? (
+            <HiArrowRight className="icon btn-icon" />
+          ) : (
+            <AiOutlineRight className="icon btn-icon" />
+          )}
+        </a>
+        <div className="button-bg"></div>
+      </div>
       <div className="button-wrapper hero-wrapper">
         <a
           href="https://materialize.com/demo/"
